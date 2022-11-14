@@ -130,17 +130,17 @@ describe NaturalSort do
 
     specify "mixed case" do
       input = %w[
-        a
-        b
-        A
-        B
+        abc
+        bcd
+        ACB
+        BDC
       ]
 
       expected = %w[
-        A
-        a
-        B
-        b
+        abc
+        ACB
+        bcd
+        BDC
       ]
 
       assert_sorted input, expected
@@ -153,8 +153,8 @@ describe NaturalSort do
         a10
         10a
         a10a
-        a10.a
         a10.A
+        a10.a
         10.20a
         10.20
       ]

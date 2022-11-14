@@ -32,7 +32,7 @@ module NaturalSort
     private
 
     def compare_chars(a, b)
-      a == b.swapcase ? a <=> b : a.downcase <=> b.downcase
+      a.downcase <=> b.downcase
     end
   end
 end
